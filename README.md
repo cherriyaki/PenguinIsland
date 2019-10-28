@@ -1,6 +1,5 @@
 # PenguinIsland
 
-## Penguin Island
 By Cherry Lim, k1894317
 
 My game is called Penguin Island, a town where penguins live.
@@ -124,7 +123,7 @@ through a trap door. The room stack is then cleared, and the currentRoom will be
 plaza. Description of plaza is printed. 
 
 ### Code quality
-Coupling
+#### Coupling
 I made it such that if a class wants to access the fields of another class, then it does so by
 calling an accessor method from that class. For instance, all methods starting with ‘get’, like
 ‘getInventory’ in the Character class, are accessor methods that return the respective field.
@@ -133,7 +132,7 @@ methods that add or remove elements from a hashmap field of that class. This all
 interface of the class to allow changes made to the fields, without accessing the fields
 directly.
 
-Cohesion
+#### Cohesion
 I tried as much as possible to allocate methods to the class that it is most relevant to.
 Game only has methods that implement user commands and methods that are specific to
 the game. However, I’ve made 2 mistakes in Game – getCurrentRoom should have been
@@ -145,7 +144,7 @@ In Room, Item, Character, Command, CommandWords and Parser, all methods are rele
 to their respective class. These classes can be used to create a totally different game, as the
 methods don’t need change, only the data does.
 
-Responsibility-driven design
+#### Responsibility-driven design
 I tried as much as possible to ensure that the relevant class handles the relevant data. I’ve
 discussed this in cohesion.
 Ideally, PenguinIsland should contain all dialogue required in the game, as the dialogue is
@@ -155,7 +154,7 @@ Ideally, I would move all welcome and congratulatory messages from Game to
 PenguinIsland, because if this was a dungeon game for example, those messages would say
 different things.
 
-Maintainability
+#### Maintainability
 As I tried to ensure the other three code qualities, especially cohesion and responsibilitydriven design, this allows errors to be easily found as you would only need to look in the
 class that is relevant.
 
