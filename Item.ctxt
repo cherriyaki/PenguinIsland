@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Item
+comment0.text=\n\ Class\ Item\ -\ an\ item\ in\ an\ adventure\ game.\n\n\ This\ class\ is\ part\ of\ the\ "World\ of\ Zuul"\ application.\ \n\ "World\ of\ Zuul"\ is\ a\ very\ simple,\ text\ based\ adventure\ game.\ \ \n\n\ An\ "Item"\ represents\ an\ item\ in\ a\ room\ of\ the\ game.\n\ \n\ @author\ \ Cherry\ Lim\n
+comment1.params=name\ weight\ description
+comment1.target=Item(java.lang.String,\ int,\ java.lang.String)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Item\n
+comment2.params=
+comment2.target=int\ getWeight()
+comment2.text=\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\n\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\n
+comment3.params=
+comment3.target=java.lang.String\ getName()
+numComments=4
